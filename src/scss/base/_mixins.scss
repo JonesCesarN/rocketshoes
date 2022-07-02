@@ -1,0 +1,38 @@
+@mixin font-size($sizeValue: $base-font-size, $line: $sizeValue * 1.2) {
+  font-size: ($sizeValue);
+  line-height: ($line);
+  font-size: ptr($sizeValue);
+  line-height: ptr($line);
+}
+
+// media queries
+@mixin devices($breakpoint) {
+  @if $breakpoint == "sm" {
+    @media only screen and (min-width: $scree-sm) {
+      @content;
+    }
+  }
+  @if $breakpoint == "md" {
+    @media only screen and (min-width: $scree-md) {
+      @content;
+    }
+  }
+  @if $breakpoint == "lg" {
+    @media only screen and (min-width: $scree-lg) {
+      @content;
+    }
+  }
+  @if $breakpoint == "xl" {
+    @media only screen and (min-width: $scree-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin event() {
+  &:hover,
+  &:active,
+  &:active {
+    @content;
+  }
+}

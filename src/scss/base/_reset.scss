@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: $base-font-size;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $background;
+}
+
+img {
+  display: block;
+  width: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+
+  &__video {
+    width: 250px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1 0 auto;
+    align-items: center;
+    font-size: ptr(18px);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    & a {
+      padding: 30px;
+    }
+  }
+
+  &__btn {
+    width: 435px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $footer;
+    color: white;
+    text-transform: uppercase;
+    gap: 10px;
+    font-size: ptr(28px);
+    cursor: pointer;
+    & img {
+      width: 20px;
+    }
+  }
+}

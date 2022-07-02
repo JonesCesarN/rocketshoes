@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 10px 64px;
+  max-width: 1440px;
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__search {
+    display: flex;
+    gap: 90px;
+
+    & img {
+      width: 25px;
+    }
+  }
+}
